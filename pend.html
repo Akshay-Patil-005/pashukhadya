@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <!-- <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css"> -->
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="form/style.css"> -->
+    <style>
+        body {
+        margin:0;font-family:Arial;
+        padding: 0 50px;
+        }
+    
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
+        }
+    
+        .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+    
+        .active {
+        background-color: #04AA6D;
+        color: white;
+        }
+    
+        .topnav .icon {
+        display: none;
+        }
+    
+        .dropdown {
+        float: left;
+        overflow: hidden;
+        
+        }
+    
+        .dropdown .dropbtn {
+        font-size: 17px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        }
+    
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+    
+        .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+    
+        .topnav a:hover, .dropdown:hover .dropbtn {
+        background-color: #555;
+        color: white;
+        }
+    
+        .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+    
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+    
+        @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child), .dropdown .dropbtn {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+        }
+    
+        @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        .topnav.responsive .dropdown {float: none;}
+        .topnav.responsive .dropdown-content {position: relative;}
+        .topnav.responsive .dropdown .dropbtn {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+        }
+    </style>
+    </head>
+    <body>
+    
+        <div class="topnav" id="myTopnav">
+            <a href="home.html" class="active">पहिले पान</a>
+        
+            <div class="dropdown">
+                <button class="dropbtn">चारा विक्री 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="sell.html">ऊस</a>
+                    <a href="sell.html">मका</a>
+                    <a href="sell.html">उसाच्या (वाड्याची पेंडी)</a>
+                    <a href="sell.html">घास गवत</a>
+                    <a href="sell.html">कडधाण्याचे कुटा</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">चचारा खरेदी 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="buy.html">ऊस</a>
+                    <a href="buy.html">मका</a>
+                    <a href="buy.html">उसाच्या (वाड्याची पेंडी)</a>
+                    <a href="buy.html">घास गवत</a>
+                    <a href="buy.html">कडधाण्याचे कुटा</a>
+                </div>
+            </div>
+            <a  href="murghas.html">मुरघास खरेदी</a>
+        
+        
+            <div class="dropdown">
+                <button class="dropbtn">पेंड
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            
+                <div class="dropdown-content">
+                    <a href="pend.html">गोळी पेंड (इंद्रनील)</a>
+                    <a href="pend.html">गोळी पेंड (सोनाई)</a>
+                    <a href="pend.html">खपरी पेंड</a>
+                    <a href="pend.html">सरकी पेंड</a>
+                    <a href="pend.html">गहू भुसा</a>
+                    <a href="pend.html"> मकेचा भरडा</a>  
+                </div>
+            </div>
+        
+            <div class="dropdown">
+                <button class="dropbtn">सेंद्रिय खत
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            
+                <div class="dropdown-content">
+                    <a href="khat.html">शेण खत</a>
+                    <a href="khat.html">लेंडी खत</a>
+                    <a href="khat.html">कोंबडी खत</a>
+                </div>
+            </div>
+            
+            <a href="login.html">लॉगिन</a>
+            <!-- <a href="#" class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" 
+                    style="width:auto;">लॉगिन </a> -->
+        
+            <a href="#">मदत व संपर्क केंद्र</a>
+             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
+        </div>
+    
+        <br>
+    
+        <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+        </script>
+
+        <div class="main">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-img">
+                        <img src="assets/farmer2.jpg" alt="">
+                        <img src="assets/farmer@.jpg" alt="">
+                    </div>
+
+                    <div class="signup-form">
+
+                        <form  action="" method="POST" class="register-form" id="register-form">
+                                <center> <h2>पेंड खरेदी केंद्र</h2> </center>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">संपूर्ण नाव :</label>
+                                        <input type="text" name="name" id="name" placeholder="आपले संपूर्ण नाव" required />
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="name">मोबाईल नंम्बर :</label>
+                                        <input type="number" name="mobile" id="name" placeholder="मोबाईल नुंबर" required/>
+                                    </div>
+                                </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">जिल्ल्याचे नाव :</label>
+                                    <div class="form-select">
+                                        <select name="district" id="city">
+                                            <option value="-1">जिल्हा निवडा</option>
+                                            <option value="सोलापूर">सोलापूर</option>
+                                                <option value="कोल्हापूर">कोल्हापूर</option>
+                                                <option value="पुणे">पुणे</option>
+                                                <option value="सातारा">सातारा</option>
+                                                <option value="सांगली">सांगली</option>
+                                                <option value="मुंबई शहर">मुंबई शहर</option>
+                                                <option value="मुंबई उपनगर">मुंबई उपनगर</option>
+                                                <option value="पालघर">पालघर</option>
+                                                <option value="रत्नागिरी">रत्नागिरी</option>
+                                                <option value="रायगड">रायगड</option>
+                                                <option value="सिंधुदुर्ग">सिंधुदुर्ग</option>
+                                                <option value="पालघर">पालघर</option>
+                                                <option value="ठाणे">ठाणे</option>
+                                                <option value="औरंगाबाद">औरंगाबाद</option>
+                                                <option value="लातूर">लातूर</option>
+                                                <option value="उस्मानाबाद">उस्मानाबाद</option>
+                                                <option value="नांदेड">नांदेड</option>
+                                                <option value="परभणी">परभणी</option>
+                                                <option value="बीड">बीड</option>
+                                                <option value="जालना">जालना</option>
+                                                <option value="हिंगोली">हिंगोली</option>
+                                                <option value="अमरावती">अमरावती</option>
+                                                <option value="बुलढाणा">बुलढाणा</option>
+                                                <option value="अकोला">अकोला</option>
+                                                <option value="यवतमाळ">यवतमाळ</option>
+                                                <option value="वाशिम">वाशिम</option>
+                                                <option value="भंडारा">भंडारा</option>
+                                                <option value="गडचिरोली">गडचिरोली</option>
+                                                <option value="चंद्रपूर">चंद्रपूर</option>
+                                                <option value="नागपूर">नागपूर</option>
+                                                <option value="वर्धा">वर्धा</option>
+                                                <option value="गोंदिया">गोंदिया</option>
+                                                <option value="अहमदनगर">अहमदनगर</option>
+                                                <option value="धुळे">धुळे</option>
+                                                <option value="जळगाव">जळगाव</option>
+                                                <option value="नाशिक">नाशिक</option>
+                                                <option value="नंदुरबार">नंदुरबार</option>
+                                        </select>
+                                        <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label for="city">तालोक्याचे नाव :</label>
+                                    <div class="form-select">
+                                        <select name="taloka" id="city">
+                                            <option value="-1">तालोका निवडा</option>
+                                            <option value="losangeles">Los Angeles</option>
+                                            <option value="washington">Washington</option>
+                                        </select>
+                                        <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">गावाचे नाव :</label>
+                                    <input type="text" name="village" id="address" placeholder="आपल्या गावाचे नाव लिहा" required/>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="pincode">पिन कोड  :</label>
+                                    <input type="text" name="pincode" id="pincode" placeholder="(६ अंकी) पिन कोड टाका">
+                                </div>
+                            </div>
+
+                            
+                                <div class="form-group">
+                                    <label for="address">पत्ता :</label>
+                                    <input type="text" name="address" id="address" placeholder="आपला संपूर्ण पत्ता लिहा" required/>
+                                </div>
+                            
+
+                            
+
+
+                                 <!-- <div class="form-radio">
+                                    <label for="gender" class="radio-label">प्रकार निवडा :</label>
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="gender" id="male" checked>
+                                        <label for="male">खरेदी</label>
+                                        <span class="check"></span>
+                                    </div>
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="gender" id="female">
+                                        <label for="female">विक्री</label>
+                                        <span class="check"></span>
+                                    </div>
+                                </div>  -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="state">पेंडीचा प्रकार :</label>
+                                        <div class="form-select">
+                                            <select name="type" id="state">
+                                                <!-- <select name="type" id="Prakar" class="input-field"> -->
+                                                    <option value="-1">प्रकार निवडा</option>
+                                                    <option value="गोळी पेंड(सोनाई)">गोळी पेंड(सोनाई)</option>
+                                                    <option value="गोळी पेंड(इंद्रनील)">गोळी पेंड(इंद्रनील)</option>
+                                                    <option value="सरकी पेंड">सरकी पेंड</option>
+                                                    <option value="खपरी पेंड">खपरी पेंड</option>
+                                                    <option value="घऊ भुसा"> घऊ भुसा</option>
+                                                    <option value="भरडा">भरडा</option>
+                                                <!-- </select> -->
+                                            </select>
+                                            <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="birth_date">एकून नग  :</label>
+                                        <input type="number" name="quantity" id="birth_date" placeholder="(एक नग=५० kg)">
+                                    </div>
+                                    
+                                    
+                                </div>
+
+                                <!-- टिपणी:  मुरघास खरेदी ५ रुपये प्रती किलो -->
+                                <!-- <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="date">लागवडीची तारीक :</label>
+                                        <input type="date" name="date" id="birth_date">
+                                    </div>
+                                </div> -->
+                                
+                                <!-- <div class="form-group">
+                                    <label for="course">Course :</label>
+                                    <div class="form-select">
+                                        <select name="course" id="course">
+                                            <option value=""></option>
+                                            <option value="computer">Computer Operator & Pragramming Assistant</option>
+                                            <option value="desiger">Designer</option>
+                                            <option value="marketing">Marketing</option>
+                                        </select>
+                                        <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="form-group">
+                                    <label for="email">Email ID :</label>
+                                    <input type="email" name="email" id="email" />
+                                </div> -->
+                                
+                                <div class="form-submit">
+                                    <input type="submit" value="फिर्ष भरा" class="submit" name="reset" id="reset" />
+                                    <input type="submit" value="सब्मिट" class="submit" name="submit" id="submit" />
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </form>
+
+    </div>
+
+    <footer>
+        <div class="first" style="background-color:  #042331; text-align: center; padding: 10px 10px;color: white; margin-bottom: 0;">
+            <div class="second" style="font-size: 40px;" >
+                पशुखाद्य
+            </div>
+            
+            <br><br>
+            <div style="text-align: center; color: white;">
+                <a  style="cursor: 20px; color: white;" href="sell.html">चारा विक्री</a>&emsp;
+                <a style="color: white;" href="buy.html">चारा खरेदी</a>&emsp;
+                <a style="color:white;" href="murghas.html">मुरघास खरेदी</a>&emsp;
+                <a style="color:white;" href="pend.html">पेंड</a>&emsp;<br><br>
+                <a style="color:white;" href="khat.html">सेंद्रिय खत</a>&emsp;
+                <a style="color:white;" href="login.html">लॉगिन</a>&emsp;
+                <a style="color:white;" href="help.html">मदत व संपर्क केंद्र</a>&emsp;
+            </div>
+            <br><br>
+            <div>
+                Copyright &ensp; ©2022&ensp; All &ensp;rights &ensp;are &ensp; reserved<br><br>
+                 Design&ensp; and&ensp; Developed&ensp; by:&ensp; Akshay Patil
+            </div>
+        </div>
+
+    </footer>
+
+    
+
+    <script src="form/jquery.min.js"></script>
+    <script src="form/main.js"></script>
+</body>
+</html>

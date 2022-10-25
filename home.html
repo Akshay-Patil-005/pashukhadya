@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/styl.css">
+<style>
+    body {
+    margin:0;font-family:Arial;
+    /* background-color: rgb(27, 124, 203); */
+    background-color: rgb(134, 137, 44);
+    }
+
+    .topnav {
+    overflow: hidden;
+    background-color: #042331;
+    }
+
+    .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    }
+
+    .active {
+    background-color: #04AA6D;
+    color: white;
+    }
+
+    .topnav .icon {
+    display: none;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden;
+    
+    font-size: 25px;
+    
+    
+    }
+
+    .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 25px;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 30px;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    }
+</style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <div class="home">
+            <a style="margin-right: 60px;" href="home.html" class="active">पहिले पान</a>
+        </div>
+    
+    
+        <div class="dropdown">
+            <button  class="dropbtn" style="margin-left: 30px;">चारा विक्री 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="sell.html">ऊस</a>
+                <a href="sell.html">मका</a>
+                <a href="sell.html">उसाच्या (वाड्याची पेंडी)</a>
+                <a href="sell.html">घास गवत</a>
+                <a href="sell.html">कडधाण्याचे कुटा</a>
+            </div>
+        </div> 
+        <div class="dropdown" style="margin-left: 30px;">
+            <button class="dropbtn">चारा खरेदी 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="buy.html">ऊस</a>
+                <a href="buy.html">मका</a>
+                <a href="buy.html">उसाच्या (वाड्याची पेंडी)</a>
+                <a href="buy.html">घास गवत</a>
+                <a href="buy.html">कडधाण्याचे कुटा</a>
+            </div>
+        </div>
+
+            <a style="font-size: 25px; margin-left: 30px;" href="murghas.html">मुरघास खरेदी</a>
+    
+    
+        <div class="dropdown" style="margin-left: 30px;">
+            <button class="dropbtn">पेंड
+                <i class="fa fa-caret-down"></i>
+            </button>
+        
+            <div class="dropdown-content">
+                <a href="pend.html">गोळी पेंड (इंद्रनील)</a>
+                <a href="pend.html">गोळी पेंड (सोनाई)</a>
+                <a href="pend.html">खपरी पेंड</a>
+                <a href="pend.html">सरकी पेंड</a>
+                <a href="pend.html">गहू भुसा</a>
+                <a href="pend.html"> मकेचा भरडा</a>  
+            </div>
+        </div>
+    
+        <div class="dropdown" style="margin-left: 30px;">
+            <button class="dropbtn">सेंद्रिय खत
+                <i class="fa fa-caret-down"></i>
+            </button>
+        
+            <div class="dropdown-content">
+                <a href="khat.html">शेण खत</a>
+                <a href="khat.html">लेंडी खत</a>
+                <a href="khat.html">कोंबडी खत</a>
+            </div>
+        </div>
+        
+        <div class="dopdown">
+            <a style="font-size: 25px;margin-left: 30px; " href="login.html">लॉगिन</a>
+        </div>
+
+        
+            <a style="font-size: 25px;margin-left: 30px;" href="#">मदत व संपर्क केंद्र</a>
+        
+        
+        
+        <!-- <a href="#" class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" 
+                style="width:auto;">लॉगिन </a> -->
+    
+        
+            <!-- <a style="font-size: 30px;" href="#">मदत व संपर्क केंद्र</a> -->
+        
+    
+        <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+
+    <div class="slideshow-container" style="margin-top: 120px;">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/cow.jpg" style="width:100%" alt="cow">
+            <div class="text">मुक्त गोटा</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/goat.jpg" style="width:100%" alt="">
+            <div class="text">शेळी पालन</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/hen.jpg" style="width:100%" alt="">
+            <div class="text">कुकुट पालन</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="assets/a.js"></script>
+
+
+    </div>
+    
+
+    <!-- <script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+    x.style.left='-400px';
+    y.style.left='50px';
+    z.style.left='110px';
+    }
+    function login()
+    {
+    x.style.left='50px';
+    y.style.left='450px';
+    z.style.left='0px';
+    }
+    </script>
+    <script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event) 
+    {
+    if (event.target == modal) 
+    {
+    modal.style.display = "none";
+    }
+    }
+    </script> -->
+    
+
+
+    <!-- <footer >
+    <div id="foot">
+        <p>Copyright &ensp;  &copy; pashukhadya.live &ensp; |&ensp;  All rights are reserved </p><br>
+        | Follow us on 
+        <a href="https:instagram.com">
+            <img src="assets/instagram.jpg" alt="Instagram" height="15px" width="25px"> &ensp;&ensp;
+        </a>
+        <a href="https://facebook.com">
+            <img src="assets/facebook.jpg" alt="Facebook" height="25px" width="25px"> &ensp;&ensp;
+        </a>
+        <a href="https://telegram.com"> 
+            <img src="assets/telegram.jpg" alt="Telegram" height="25px" width="25px">
+        </a>
+    </div>
+    </footer> -->
+    <footer style="margin-bottom: 0px; margin-top: 140px;">
+        <div class="first" style="background-color:  #042331; text-align: center; padding: 10px 10px;color: white; margin-bottom: 0;">
+            <div class="second" style="font-size: 40px;" >
+                पशुखाद्य
+            </div>
+            
+            <br><br>
+            <div style="text-align: center; color: white;">
+                <a  style="cursor: 20px; color: white;" href="sell.html">चारा विक्री</a>&emsp;
+                <a style="color: white;" href="buy.html">चारा खरेदी</a>&emsp;
+                <a style="color:white;" href="murghas.html">मुरघास खरेदी</a>&emsp;
+                <a style="color:white;" href="pend.html">पेंड</a>&emsp;<br><br>
+                <a style="color:white;" href="khat.html">सेंद्रिय खत</a>&emsp;
+                <a style="color:white;" href="login.html">लॉगिन</a>&emsp;
+                <a style="color:white;" href="help.html">मदत व संपर्क केंद्र</a>&emsp;
+            </div>
+            <br><br>
+            <div>
+                Copyright &ensp; ©2022&ensp; All &ensp;rights &ensp;are &ensp; reserved<br><br>
+                 Design&ensp; and&ensp; Developed&ensp; by:&ensp; Akshay Patil
+                 <br>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }
+    </script>
+
+</body>
+</html>
