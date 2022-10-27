@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>पेंड खरेदी </title>
 
     <!-- Font Icon -->
     <!-- <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css"> -->
@@ -232,7 +232,7 @@
                                 <div class="form-group">
                                     <label for="city">जिल्ल्याचे नाव :</label>
                                     <div class="form-select">
-                                        <select name="district" id="city">
+                                        <select name="district" id="dist" onchange="populate(this.id,'taloka')">
                                             <option value="-1">जिल्हा निवडा</option>
                                             <option value="सोलापूर">सोलापूर</option>
                                                 <option value="कोल्हापूर">कोल्हापूर</option>
@@ -279,10 +279,9 @@
                                 <div class="form-group">
                                     <label for="city">तालोक्याचे नाव :</label>
                                     <div class="form-select">
-                                        <select name="taloka" id="city">
-                                            <option value="-1">तालोका निवडा</option>
-                                            <option value="losangeles">Los Angeles</option>
-                                            <option value="washington">Washington</option>
+                                        <select name="taloka" id="taloka">
+                                            <option value="-1">अगोदर जिल्हा  निवडा:</option>
+                                            
                                         </select>
                                         <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
                                     </div>
@@ -387,6 +386,102 @@
     </form>
 
     </div>
+
+    <script>
+        function populate(dist1,dist2)
+        {
+            var dist1=document.getElementById(dist1);
+            var dist2=document.getElementById(dist2);
+            
+            dist2.innerHTML="";
+            if(dist1.value=="सोलापूर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','उत्तर सोलापुर|उत्तर सोलापुर','दक्षिण सोलापुर|दक्षिण सोलापुर','अक्कलकोट|अक्कलकोट','बार्शी|बार्शी','मंगळवेढा|मंगळवेढा','पंढरपुर|पंढरपुर','सांगोला|सांगोला','माळशिरस|माळशिरस','मोहोळ|मोहोळ','माढा|माढा','करमाळा|करमाळा'];
+                
+            }
+            else if(dist1.value=="कोल्हापूर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','करवीर|करवीर','आजरा|आजरा','कागल|कागल','गगनबावडा|गगनबावडा','गडहिंग्लज|गडहिंग्लज','चंदगड|चंदगड','पन्हाळा|पन्हाळा','भुदरगड|भुदरगड','राधानगरी|राधानगरी','शाहुवाडी|शाहुवाडी','शिरोळ|शिरोळ','हातकणंगले|हातकणंगले'];
+            }
+            else if(dist1.value=="पुणे")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','हवेली|हवेली','पुणेशहर|पुणेशहर','मावळ|मावळ',
+                'मुळशी|मुळशी','शिरूर|शिरूर','बारामती|बारामती','दौंड|दौंड','इंदापूर|इंदापूर','भोर|भोर',
+                'वेल्हा|वेल्हा','|पुरंदर'];
+            }
+            else if(dist1.value=="सातारा")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','सातारा|सातारा','कराड|कराड','वाई|वाई',
+                'महाबळेश्वर|महाबळेश्वर','फलटन|फलटन','माण|माण','खटव|खटव','कोरेगांव|कोरेगांव','पाटण|पाटण',
+                'जाओळी|जाओळी','खंडाळा|खंडाळा'];
+            }
+            else if(dist1.value=="सांगली")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','मिरज|मिरज','वाळवा|वाळवा','जाठ|जाठ',
+                'तासगांव|तासगांव','खानपुर (वीटा)|खानपुर (वीटा)','पलूस|पलूस','शिराळा|शिराळा','कवठे महाकाळ|कवठे महाकाळ','कडेगांव|कडेगांव',
+                'अटपडी|अटपडी'];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई उपनगर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            else if(dist1.value=="मुंबई शहर")
+            {
+                var optionArray=['तालोका निवडा|तालोका निवडा','कुर्ला|कुर्ला','अंधेरी|अंधेरी','बोरीवली|बोरीवली'
+                ];
+            }
+            
+            for (var option in optionArray)
+            {
+                var pair=optionArray[option].split("|");
+                var newoption=document.createElement("option");
+                newoption.value=pair[0];
+                newoption.innerHTML=pair[1];
+                dist2.options.add(newoption);
+            }
+        }
+    </script>
 
     <footer>
         <div class="first" style="background-color:  #042331; text-align: center; padding: 10px 10px;color: white; margin-bottom: 0;">
