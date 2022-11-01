@@ -303,6 +303,10 @@
                             </div>
 
                             
+                                <div class="form-row">
+
+                            
+                            
                                 <div class="form-group">
                                     <label for="address">पत्ता :</label>
                                     <input type="text" name="address" id="address" placeholder="आपला संपूर्ण पत्ता" required />
@@ -325,7 +329,7 @@
                                         <span class="check"></span>
                                     </div>
                                 </div> -->
-                                <div class="form-row">
+                                
                                     <div class="form-group">
                                         <label for="state">लागवडी चा प्रकार :</label>
                                         <div class="form-select">
@@ -353,23 +357,48 @@
                                             <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
                                         </div>
                                     </div>
+                            </div>
+
+                            <label for="state">चाऱ्याचे फोटो: </label>
+
+                            <div class="form-row">
+
+                                
+
+                                <div class="form-group">
+                                    <input  type="file" onchange="readURL(this)" accept="Image/*">
+                                </div>
+
+                                <div class="form-group">
+                                    <input  type="file" onchange="readURL(this)" accept="Image/*">
+                                </div>
+
+
+                            </div>
+                            <div class="form-row">
 
                                     <div class="form-group">
                                         <label for="birth_date">लागवडीचा क्षेत्र :</label>
                                         <input type="number" name="area"  placeholder="एकर मध्ये टाका" id="area"/>
                                     </div>
                                     
-                                </div>
-                                <div class="form-row">
+                                
+                                
                                     <div class="form-group">
                                         <label for="date">लागवडीची तारीक :</label>
                                         <input type="date" name="date" id="birth_date" placeholder="लागवड केलेली तारीख">
                                     </div>
+                            </div>
+
+                            <div class="form-row">
+
+                            
+                                
                                     <div class="form-group">
                                         <label >अपेक्षित किंमत :</label>
                                         <input type="number" name="money"  placeholder="अपेक्षित असणारी रक्कम टाका" id="area"/>
                                     </div>
-                                </div>
+                            </div>    
                                 <!-- <div class="form-group">
                                     <label for="course">Course :</label>
                                     <div class="form-select">
@@ -387,10 +416,10 @@
                                     <input type="email" name="email" id="email" />
                                 </div> -->
                                 
-                                <div class="form-submit">
-                                    <input type="submit" value="फिर्ष भरा" class="submit" name="reset" id="reset" />
-                                    <input type="submit" value="सब्मिट" class="submit" name="submit" id="submit" />
-                                </div>
+                            <div class="form-submit">
+                                <input type="submit" value="फिर्ष भरा" class="submit" name="reset" id="reset" />
+                                <input type="submit" value="सब्मिट" class="submit" name="submit" id="submit" />
+                            </div>
                         </form>
                     </div>
                 </div>
