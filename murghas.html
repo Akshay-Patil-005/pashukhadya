@@ -92,6 +92,26 @@
     .dropdown:hover .dropdown-content {
     display: block;
     }
+    
+    input[type="radio"]{
+      display: none;
+    }
+    input[type="radio"] + label span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: transparent;
+      vertical-align: middle;
+      border: 2px solid #f56;
+      border-radius: 50%;
+      padding: 2px;
+      margin:0 5px;
+    }
+    input[type="radio"]:checked + label span {
+      width: 10px;
+      height: 10px;
+      background: #f56;
+      background-clip: content-box;}
 
     @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -312,19 +332,17 @@
                             
 
 
-                                 <div class="form-radio">
-                                    <label for="gender" class="radio-label">प्रकार निवडा :</label>
-                                    <div class="form-radio-item">
-                                        <input type="radio" name="kharedi" id="male" checked>
-                                        <label for="male">खरेदी</label>
-                                        <span class="check"></span>
-                                    </div>
-                                    <div class="form-radio-item">
-                                        <input type="radio" name="vikri" id="female">
-                                        <label for="female">विक्री</label>
-                                        <span class="check"></span>
-                                    </div>
-                                </div> 
+                                 <label for="gender" class="radio-label">प्रकार निवडा :</label>
+                                
+                                <input id="individual" type="radio" name="option" value="खरेदी">
+                                <label for="individual"><span></span>खरेदी</label>
+
+                                <input id="organization" type="radio" name="option" value="विक्री">
+                                <label for="organization"><span></span>विक्री</label>
+
+                                <input id="organ" type="radio" name="option" value="करुण पाहिजे">
+                                <label for="organ"><span></span>करुण पाहिजे</label>
+                            
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="state">मुरघासाचा प्रकार :</label>
