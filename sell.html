@@ -11,6 +11,7 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link rel="stylesheet" href="form/style.css"> -->
 <style>
@@ -418,7 +419,15 @@
                                 
                             <div class="form-submit">
                                 <input type="submit" value="फिर्ष भरा" class="submit" name="reset" id="reset" />
-                                <input type="submit" value="सब्मिट" class="submit" name="submit" id="submit" />
+                                <input type="submit" onclick="popUp()" id="pop" value="सब्मिट" class="submit" name="submit"  />
+
+                                   
+                                    <script>
+                                        function popUp(){
+                                            swal("यशस्वीरित्या नोंदणी झाली!!!", "आपल्यास संपर्क करण्यात येईल!", "success");
+                                        }
+                                    </script>
+                                   
                             </div>
                         </form>
                     </div>
