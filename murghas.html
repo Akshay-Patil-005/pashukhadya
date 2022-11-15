@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>मुरघास खरेदी / विक्री</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Font Icon -->
     <!-- <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css"> -->
@@ -394,7 +395,14 @@
                                 
                                 <div class="form-submit">
                                     <input type="submit" value="फिर्ष भरा" class="submit" name="reset" id="reset" />
-                                    <input type="submit" value="सब्मिट" class="submit" name="submit" id="submit" />
+                                    <input type="submit" onclick="popUp()" id="pop" value="सब्मिट" class="submit" name="submit"  />
+
+                                   
+                                    <script>
+                                        function popUp(){
+                                            swal("यशस्वीरित्या नोंदणी झाली!!!", "आपल्यास संपर्क करण्यात येईल!", "success");
+                                        }
+                                    </script>
                                 </div>
                         </form>
                     </div>
